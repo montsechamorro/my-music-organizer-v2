@@ -117,4 +117,17 @@ public class MusicOrganizer
             System.out.println("No se encuentra el archivo indicado");
         }
     }
+    /**
+     * 
+     */
+    public void playPartMusic(String nameArtist)
+    {
+       for (String filename : files)
+       {
+           if (filename.contains(nameArtist))
+           {
+               player.playSample(filename);
+           }
+        }
+    }
 }
